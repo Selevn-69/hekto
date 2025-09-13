@@ -27,6 +27,8 @@ body{
     align-items: center;
     gap: 0;
     overflow: hidden;
+    border: 2px solid #E7E6EF;
+    border-radius: 2px;
 }
 .search input{
     border: none;
@@ -48,10 +50,82 @@ body{
     transition: 0.3s;
 }
 
-.search form{
-    border: 2px solid #E7E6EF;
-    border-radius: 2px;
+.sign-up form{
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 3px;
 }
+.sign-up input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding: 10px;
+    
+}
+.sign-up input::placeholder{
+    color: #8A8FB9;
+}
+.sign-up button:hover{
+    cursor: pointer;
+    background-color: #921b4f;
+}
+.sign-up button{
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    border-radius: 3px;
+    padding: 10px 40px;
+    transition: 0.3s;
+}
+
+.left p{
+    color: #8A8FB9;
+}
+.left img{
+    display: block;
+}
+
+.footer{
+    background-color: #EEEFFB;
+    padding: 100px 0px;
+}
+
+.right{
+    width: 60%;
+    
+}
+
+.left{
+    align-items: flex-start;
+}
+
+.footer a{
+    color: #8A8FB9;
+    font-size: 16px;
+}
+.footer h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+}
+
+.start{
+    align-items: flex-start;
+}
+
+.bottom-left{
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1200px) {
     .list,.search{
@@ -61,6 +135,8 @@ body{
         display: block;
     }
 }
+
+
 
 
 

@@ -42,3 +42,28 @@ ul{
     width: calc(100% - 320px);
     margin: auto;
 }
+
+
+.text-white{
+    color: white;
+}
+
+.d-flex{
+    display: flex;
+}       
+
+.flex-dirC{
+    flex-direction: column;
+}  
+
+.gap-1{
+    gap: 5px;
+}
+
+.gap-2{
+    gap: 25px;
+}
+
+.gap-3{
+    gap: 50px;
+}
