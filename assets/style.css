@@ -79,13 +79,23 @@ body{
     border-radius: 3px;
     padding: 10px 40px;
     transition: 0.3s;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
-
+.hidden{
+    display: none;
+}
 .left p{
     color: #8A8FB9;
 }
 .left img{
     display: block;
+    flex-shrink: 0;
+}
+
+.left svg {
+  height: auto;
+  flex-shrink: 0;
 }
 
 .footer{
@@ -94,12 +104,13 @@ body{
 }
 
 .right{
-    width: 60%;
+    width: calc((100% - 30px )/ 2);
     
 }
 
 .left{
     align-items: flex-start;
+    width: calc((100% - 30px )/ 2);
 }
 
 .footer a{
@@ -119,8 +130,12 @@ body{
     align-items: flex-start;
 }
 
-
-
+.footer .row{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 
 
 
@@ -132,6 +147,12 @@ body{
         display:none;
     }
     .bar{
+        display: block;
+    }
+    .sign-up form{
+        display: none;
+    }
+    .hidden{
         display: block;
     }
 }
