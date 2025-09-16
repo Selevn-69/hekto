@@ -22,6 +22,58 @@ body{
 .list a{
     color: #0D0E43;
 }
+
+/*clients*/
+
+.clients{
+    padding: 50px 0px;
+
+}
+.clients .row{
+    gap:15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.clients img{
+    width: 100px;
+    display: block;
+}
+
+.clients .logo{
+    opacity: 50%;
+}
+/*NewsLater*/
+.newslater{
+    background-image: url('./img/Rectangle\ 102.webp');
+    padding: 180px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+}
+.newslater h2{
+    margin-bottom: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    font-size: 35px;
+}
+.newslater a{
+    border-radius: 3px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer */
 .search form{
     display: flex;
     align-items: center;
@@ -158,6 +210,11 @@ body{
 }
 
 
+@media screen and (max-width:380px) {
+    .right{
+        width: 100%;
+    }
+}
 
 
 

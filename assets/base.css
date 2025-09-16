@@ -25,6 +25,12 @@ ul{
     padding: 16px 40px;
     border-radius: 2px;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #921b4f;
 }
 
 .btn-primary{
