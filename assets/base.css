@@ -28,7 +28,7 @@ ul{
     transition: 0.3s;
 }
 
-.btn:hover{
+.btn-primary:hover{
     cursor: pointer;
     background-color: #921b4f;
 }

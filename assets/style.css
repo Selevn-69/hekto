@@ -61,17 +61,157 @@ body{
     border-radius: 3px;
     font-family: "Josefin Sans", sans-serif;
 }
+/*Featured Products*/
+.products{
+    text-align: center;
+    padding: 129px 0px;
+}
+
+.products h2{
+    font-size: 42px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #1A0B5B;
+    margin-bottom: 48px;
+}
+
+.products .row{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+}
+.product{
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    width: 270px;
+    height: 361px;
+    transition: all 0.6s;
+    position: relative;
+}
+
+.product-pic{
+    display: flex;
+    background-color: #F6F7FB;
+    height: 236px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+.product-name{
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.smallbtn{
+    border: none;
+    border-radius: 10px;
+    width: 14px;
+    height: 4px;
+}
+.button-1{
+    background-color: #05E6B7;
+}
+
+.button-2{
+    background-color: #F701A8;
+}
+
+.button-3{
+    background-color: #00009D;
+    transition: all 0.3s;
+}
+
+.code-price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    gap: 12px;
+    transition: all 0.6s;
+}
+
+.product:hover{
+    background-color: #2F1AC4;
+    cursor: pointer;
+}
+.product:hover .product-pic{
+    background-color: #F7F7F7;
+
+}
+.product:hover p{
+    color: white;
+}
+
+.product:hover .button-3{
+    background-color: #FFEAC1;
+}
+
+.hover-details{
+    position: absolute;
+    display: none;
+    transition: all 0.3s;
+}
 
 
+.circle{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s;
+
+}
+.smallbtn{
+    cursor: pointer;
+}
+.viewd{
+    background-color: #08D15F;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition: all 0.3s;
+    top: 202px;
+    left: calc(100%/2 - 46px);
+}
+
+.viewd:hover{
+    cursor: pointer;
+    background-color: #079243;
+    
+}
+
+.shopping{
+    top: 3px;
+    left: 4px;
+}
+.fav{
+   top: 3px;
+   left: 40px;
+}
 
 
+.zoom{
+    top: 3px;
+    left: 75px;
+}
 
+.product:hover .hover-details{
+    display: block;
+}
 
-
-
-
-
-
+.circle:hover{
+    cursor: pointer;
+    background-color: #EEEFFB;
+}
 
 /*footer */
 .search form{
@@ -200,6 +340,7 @@ body{
     }
     .bar{
         display: block;
+        cursor: pointer;
     }
     .sign-up form{
         display: none;
