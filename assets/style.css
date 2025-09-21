@@ -44,6 +44,95 @@ body{
 .clients .logo{
     opacity: 50%;
 }
+
+/*trending*/
+.trending{
+    text-align: center;
+    margin-bottom: 39px;
+    padding: 139px 0px;
+}
+
+.trending h2{
+    font-size: 42px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #1A0B5B;
+    margin-bottom: 56px;
+}
+
+.trending-pro{
+    width: 270px;
+    height: 350px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.trending-img{
+    width: 247px;
+    height: 244px;
+    background-color: #F5F6F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+}
+
+.trending-name{
+    font-size: 16px;
+    color: #151875;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.trending .new-price{
+    font-size: 14px;
+    color: #151875;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.trending .old-price{
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    opacity: 30%;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.trending-price{
+    display: flex;
+    gap: 12px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.trending .row{
+    text-align: center;
+    gap: 20px;
+}
+
+
+.trending-pro:hover .trending-img{
+    padding-bottom: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Top Categories*/
 
 .top{
@@ -94,7 +183,9 @@ body{
 }
 
 .top-pro:hover .top-img{
-    box-shadow: -5px 5px 0 0px #9877E7; 
+    box-shadow: -5px 5px 0 0px #9877E7;
+    padding-bottom: 8px;
+
 }
 
 .top-pro:hover .viewd{
@@ -607,5 +698,10 @@ body{
     }
 }
 
+@media screen and (max-width:880px) {
+    .trending .row{
+    justify-content: center;
+    }
 
+}
 
