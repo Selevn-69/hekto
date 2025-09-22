@@ -44,6 +44,67 @@ body{
 .clients .logo{
     opacity: 50%;
 }
+/*shopex*/
+
+.shopex{
+    text-align: center;
+
+}
+
+.shopex h2{
+    font-size: 42px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    margin-bottom: 56px;
+}
+
+.offer-card{
+    display: flex;
+    width: 270px;
+    height: 320px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    cursor: pointer;
+    
+}
+
+.offer-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 217px;
+}
+
+.offer-desc .first{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: #151875;
+    font-weight: bold;
+}
+
+.offer-desc .second{
+    font-size: 16px;
+    color: #1A0B5B;
+    opacity: 30%;
+}
+
+.offer-card:hover .offer-img{
+    padding-bottom: 20px;
+}
+
+
+.offer-img{
+    transition: all 0.3s;
+}
+
+.shopex .row{
+    justify-self: center;
+    gap: 28px;
+}
+
 
 /*trending*/
 .trending{
