@@ -44,13 +44,155 @@ body{
 .clients .logo{
     opacity: 50%;
 }
-/*shopex*/
-
-.shopex{
+/*Latest products*/
+.latest-products{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 58px;
+}
+
+.latest-products h2{
+    font-size: 42px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    margin-bottom: 19px;
+}
+
+.latest-products .sections{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 58px;
+    width: max-content;
+}
+
+.latest-products a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #151875;
+    transition: all 0.3s;
+    margin-bottom: 58px;
+}
+
+.latest-products a:hover{
+    color: #FB2E86;
+    text-decoration: underline;
+}
+
+
+.latest-product{
+    max-width: 360px;
+    height: 306px;
+    flex: 0 1 360px;
+    cursor: pointer;
+}
+
+.latest-img{
+    background-color: #F7F7F7;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9px;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.latest-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices{
+    display: flex;
+    gap: 10px;
+}
+
+.latest-name{
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    font-size: 16px;
+}
+
+.prices .new{
+    color: #151875;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.prices .old{
+    color: #FB2448;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+
+
+.latest-img .shopping{
+    left: 6px;
+    top: 164px;
+}
+
+.latest-img .zoom{
+    left: 7px;
+    top: 233px;
+}
+
+.latest-img .fav{
+    left: 7px;
+    top: 200px;
 
 }
 
+.badge{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.latest-product:hover .badge{
+    
+    opacity: 100%;
+}
+.latest-product .hover-details{
+    display: block;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.latest-product:hover .hover-details{
+    opacity: 1;
+}
+
+.latest-product:hover .latest-img{
+    padding-bottom: 20px;
+}
+
+
+.latest-products .row{
+    justify-content: center;
+    gap: 72px;
+}
+
+.latest-products .bar{
+    margin-bottom: 40px;
+}
+
+.lat
+
+
+
+
+/*shopex*/
+
+.shopex { text-align: center !important; }
+.shopex h2 { text-align: center !important; }
 .shopex h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
@@ -68,7 +210,7 @@ body{
     align-items: center;
     gap: 27px;
     cursor: pointer;
-    
+    text-align: center;
 }
 
 .offer-desc{
@@ -101,7 +243,7 @@ body{
 }
 
 .shopex .row{
-    justify-self: center;
+    justify-content: center;
     gap: 28px;
 }
 
@@ -116,7 +258,7 @@ body{
 .trending h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
-    color: #1A0B5B;
+    color: #151875;
     margin-bottom: 56px;
 }
 
@@ -204,7 +346,7 @@ body{
 .top h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
-    color: #1A0B5B;
+    color: #151875;
     margin-bottom: 56px;
 }
 
@@ -285,7 +427,7 @@ body{
 .products h2{
     font-size: 42px;
     font-family: "Josefin Sans", sans-serif;
-    color: #1A0B5B;
+    color: #151875;
     margin-bottom: 48px;
 }
 
@@ -734,6 +876,10 @@ body{
     }
     .hidden{
         display: block;
+    }
+
+    .latest-products .sections{
+        display: none;
     }
 }
 
