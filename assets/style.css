@@ -618,8 +618,10 @@ body{
 .lamp{
  position: relative;
  width: 25%;
- bottom: 171px;
+ bottom: 230px;
  left: -40px;
+ transition: all 1s ease-in-out;
+
 }
 
 .lamp img{
@@ -630,7 +632,10 @@ body{
     margin-right: 93px;
 }
 
-
+.hero:hover .lamp{
+    cursor: pointer;
+    bottom: 170px;
+}
 
 
 
